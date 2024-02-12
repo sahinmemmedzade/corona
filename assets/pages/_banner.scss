@@ -1,0 +1,86 @@
+.banner{
+    margin-top: 5%;
+    height: 500px;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: "blog-1 blog-2"
+    "blog-1 blog-3";
+    gap: 10px;
+    .gloves{
+        background-image:url(https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/h3ad1.jpg);
+grid-area: blog-1;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+    }
+    .facemask{
+        background-image: url(https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/h3ad2.jpg);
+        grid-area: blog-2;
+        background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+    }
+    .handmask{
+        background-image: url(https://team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/assets-for-index-2/img/h3ad3.jpg);
+        grid-area: blog-3;
+        background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+    }
+}
+@media screen and (max-width:1200px) {
+    .banner{
+        .facemask{
+           .facemaskinfo{
+           h1{
+            font-size: 25px;
+           } 
+           } 
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .banner{
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: repeat(3 1fr);
+        margin-left: 40px;
+        grid-template-areas: "blog-1 "
+        "blog-2"
+        "blog-3";  
+       
+
+        .gloves{
+            height: 300px;
+            margin-right: -400px;
+            box-sizing: border-box;
+          .glovesinfo{
+            margin-left: 180px;
+          }  
+        }
+        .facemask{
+            height: 300px;
+            margin-right: -400px;
+            box-sizing: border-box;
+        }
+        .handmask{
+            height: 300px;
+            margin-right: -400px;
+            box-sizing: border-box;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .banner{
+        .facemask{
+            .facemaskinfo{
+                margin-top: 40px;
+            }
+        }
+       .handmask{
+        .handmaskinfo{
+            margin-top: 40px; 
+        }
+       } 
+    }
+}

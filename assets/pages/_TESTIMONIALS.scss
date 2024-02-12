@@ -1,0 +1,43 @@
+.TESTIMONIALS{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ background-size: cover;
+position: relative;
+    height: 700px;
+    .TESTIMONIALScard{
+        width: 60%;
+        height: 50%;
+        position: absolute;
+        background-color: white;
+        top:40%;
+        .profilimg{
+            background-size: cover;
+            left: 50%;
+            top: -5%;
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .TESTIMONIALS{
+        margin-top: 100%;
+    }  
+}
+@media screen and (max-width: 600px) {
+    .TESTIMONIALS{
+        margin-top: 200%;
+        width: 590px;
+        .TESTIMONIALScard{
+            .TESTIMONIALScardinfo{
+                margin-top: 20% !important;
+                h3{
+                    font-size: 15px;
+                }
+            }
+        }
+    }  
+}

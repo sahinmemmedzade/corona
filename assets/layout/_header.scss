@@ -1,0 +1,105 @@
+.mainheader{
+    position: sticky;
+    background-color: aliceblue;
+    z-index: 2;
+    top:0;
+width: 100%;
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+     top: 0px;
+    
+     position: relative;
+    .logo {
+        font-size: 50px;
+
+        .Shopword {
+            color: red;
+        }
+    }
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    gap:10px
+}
+.menuicon{
+    font-size: 30px;
+display: none;
+
+}
+.menuicon:hover + .littlemenu {
+    display: block;
+}
+
+.littlemenu{
+    position: absolute;
+    top:100%;
+    left:38%;
+  display: none;
+ ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size: 25px;
+    li{
+        a{
+            color: black;
+        }
+    }
+  
+ }
+}
+.bigmenu{
+  margin-left: 20px;
+    ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+    font-size: 25px;
+    li{
+        a{
+            color: black;
+            &:hover{
+            color: $maincolor;
+            text-decoration: none;
+            }  
+        }
+       
+    }
+}
+}
+}}
+@media screen and (max-width:900px) {
+    .mainheader{
+        width: 98vw;
+    height: 200px;
+
+z-index: 1;
+    .header{
+    .bigmenu{
+        display: none;
+    }
+.menuicon{
+    display: block;
+}
+}
+  
+}}
+@media screen and (max-width:600px) {
+    .mainheader{
+        width: 620px;
+        .header{
+            .littlemenu{
+                ul{
+                font-size:20px;}
+            }
+        }
+    }
+}

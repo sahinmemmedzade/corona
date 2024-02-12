@@ -1,0 +1,116 @@
+.cards{
+    height: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    gap:15px;
+    .card{
+        height:600px;
+        width:25%;
+        
+        .cardimg{
+            height: 400px;
+            width: 100%;
+           
+           
+        }
+        .backimg{
+            height: 400px;
+            width: 100%;
+            opacity: 0;
+            &:hover{
+                opacity: 1;
+                transition: 1000ms;
+            }
+            
+        }
+        .cardinfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1; margin-top: 10px;
+          h4{
+            &:hover{
+                color: red;
+            }}
+            a{
+                h6{
+                &:hover{
+                    color: red;
+                }}
+            }
+          } 
+        }
+       
+    }
+@media screen and (max-width:1200px) {
+    .cards{
+        height: 1000px;
+        .card{
+            height: 500px;
+            .cardimg{
+                height: 270px;
+            }
+            .backimg{
+                height: 270px;
+            }
+            .cardinfo{
+             h4{
+                font-size: 20px;
+             }   
+            }
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    .cards{
+        margin-top: 60%;
+        height: 1000px;
+        .card{
+            width:48%;
+            height: 600px;
+            .cardimg{
+                height: 450px;
+            }
+            .backimg{
+                height: 450px;
+                
+            }}}
+}
+@media screen and (max-width:700px) {
+    .cards{
+        margin-top: 80%;
+        height: 1000px;
+margin-left: 10%;
+        .card{
+            width:48%;
+            height: 450px;
+            .cardimg{
+                height: 330px;
+            }
+            .backimg{
+                height: 330px;
+            }}}
+}
+@media screen and (max-width:500px) {
+    .cards{
+        height: 700px;
+        margin-top: 100%;
+        .card{
+            height: 360px;
+            .cardimg{
+                height: 200px;
+            }
+            .backimg{
+                height: 200px;
+            }
+            .cardinfo{
+             h4{
+                font-size: 12px;
+             }   
+            }
+        }
+    }
+}

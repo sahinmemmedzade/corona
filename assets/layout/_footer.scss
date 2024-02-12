@@ -1,0 +1,24 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:800px) {
+    footer{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:700px) {
+    footer{
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width:400px) {
+    footer{
+        margin: 45%  0  0 120px;
+    }
+}
+@media screen and (max-width:300px) {
+    footer{
+font-size: 10px;    }
+}

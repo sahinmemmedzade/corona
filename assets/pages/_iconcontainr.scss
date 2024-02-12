@@ -1,0 +1,183 @@
+.iconcontainer{
+    height:250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .freeshiping{
+        display: flex;
+        flex-direction: column;
+        width:19%;
+        justify-content: center;
+        align-items: center;
+      .freeshipingicon{
+        font-size: 25px;
+        width: 60px;
+        height: 60px;
+        background-color: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+        &:hover {
+            transform: rotateY(360deg);
+            transition: 1000ms;
+            color: red;
+        }}
+        .freshipingworld{
+            font-size: 20px;
+        }
+      
+    }
+    .specialgift{
+        display: flex;
+        flex-direction: column;
+        width:19%;
+        justify-content: center;
+        align-items: center;
+        .specialgifticon{
+            font-size: 25px;
+        width: 60px;
+        height: 60px;
+        background-color: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+        &:hover {
+            transform: rotateY(360deg);
+            transition: 1000ms;
+            color: red;
+        }
+
+        }
+        .specialgiftworld{
+            font-size: 20px;
+        }
+    }
+    .MONEY{
+        display: flex;
+        flex-direction: column;
+        width:19%;
+        justify-content: center;
+        align-items: center;
+        .MONEYicon{
+            font-size: 25px;
+        width: 60px;
+        height: 60px;
+        background-color: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+        &:hover {
+            transform: rotateY(360deg);
+            transition: 1000ms;
+            color: red;
+        }
+
+        }
+        .MONEYworld{
+            font-size: 20px;
+        }
+    }
+    .Support{
+        display: flex;
+        flex-direction: column;
+        width:19%;
+        justify-content: center;
+        align-items: center;
+        .Supporticon{
+            font-size: 25px;
+        width: 60px;
+        height: 60px;
+        background-color: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateY(180deg);
+        &:hover {
+            transform: rotateY(360deg);
+            transition: 1000ms;
+            color: red;
+        }
+
+        }
+        .Supportworld{
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .iconcontainer{
+        .freeshiping{
+            .freshipingworld{
+                font-size: 12px;
+            }
+        }
+        .MONEY{
+            .MONEYworld{
+                
+
+                font-size: 12px;
+            }
+        }
+        .specialgift{
+            .specialgiftworld{
+                font-size: 12px;
+            }
+        }
+        .Support{
+            .Supportworld{
+                font-size: 12px
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .iconcontainer{
+        .freeshiping{
+            width: 40%;
+        }
+
+        .MONEY{
+            width: 40%;
+        }
+        .specialgift{
+            width: 40%;
+        }
+        .Support{
+            width: 40%;
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    .iconcontainer{
+        margin-top: 10%;
+        gap:20px;
+        .freeshiping{
+            width: 80%;
+        }
+
+        .MONEY{
+            width: 80%;
+        }
+        .specialgift{
+            width: 80%;
+        }
+        .Support{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .iconcontainer{
+        margin-left: 20%;
+    }
+}
